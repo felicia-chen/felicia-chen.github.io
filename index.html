@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicia Chen</title>
+    <script src="https://use.fontawesome.com/d853a9d575.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="../js/script.js"></script>
+</head>
+<body class="animate-in">
+    <!-- // Intro -->
+    <header id="about">
+        <div class="backgroundindex">
+            <h1>FELICIA CHEN</h1>
+            <h4>Art, Code, Design</h4>
+                <div class="bounce">
+                    <a href="#introduction"><img src="images/downthinwhite.png" height=35px width=35px></a></div>
+
+            <!--&#91; &#93;-->
+            
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#about" class="logo">Felicia Chen</a></li><li id="icon"> &#9776;</li>
+                <li><a href="#introduction" class="list" id="intro">About</a></li>
+                <li><a href="html/visdev.html" class="list">Vis Dev Portfolio</a></li>
+                <li class="dropdown"><a href="#art" class="list dropbtn">Art</a>
+                    <div class="dropdown-content">
+                        <a href="html/environments.html">Environments</a>
+                        <a href="html/design.html">Design</a>
+                        <a href="html/sketches.html">Sketches</a>
+                    </div>
+                </li>
+                <li><a href="html/code.html" class="list">Code</a></li>
+                <li><a href="#contact" class="list">Contact</a></li>
+    
+
+            </ul>
+        </nav>
+        
+        <nav class="mobile-nav" id="mobile-nav">
+             <ul>
+                <li><a href="#introduction" class="list" id="intro">About</a></li>
+                <li><a href="html/visdev.html" class="list">Vis Dev Portfolio</a></li>
+                <li class="mobile-dropdown"><a href="#art" class="list mobile-dropbtn">Art</a>
+                    <div class="mobile-dropdown-content">
+                        <a href="html/environments.html">Environments</a>
+                        <a href="html/design.html">Design</a>
+                        <a href="html/sketches.html">Sketches</a>
+                    </div>
+                </li>
+                <li><a href="html/code.html" class="list">Code</a></li>
+                <li><a href="#contact" class="list">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+    </header>
+
+    <main>
+        <!-- // Introduction -->
+
+        <section id="introduction" class="introduction">
+            <div class="content-wrap">
+             <h2 style=color:#324A5F;>Hello!</h2>
+        <p>I'm Felicia Chen - artist, coder, and Christian.</p>
+                <p> I'm currently a <b style=color:#324A5F;>Digital Media Design</b> major at the University of Pennsylvania passionate about digital art, animation, games, and movies. I've always been inspired by the world around me--from California coastline hiking trips to fantasy novels and animated films. As my major is an interdisciplinary degree involving communications, computer science, and art, I hope to contribute both my artistic and technological skills to bring ideas into reality. I'm always willing to learn different approaches to creating! </p>
+            </div>
+           <!--  <a class="backtotop" href="#about">Back To Top</a> -->
+        </section>
+
+
+                <!-- // Introduction -->
+
+        <section id="work" class="work">
+            <div class="content-wrap columns">
+
+                <div class="col1">
+                    <img src="" class="colpic" >
+                    <h3> Visual Development </h3>
+                    <p> Passionate about envisioning and illustrating stories, with a focus on mood and lighting.</p><br>
+                    <a href="html/visdev.html" class="button">See More</a> 
+                </div>
+
+                <div class="col2">
+                    <img src="" class="colpic">
+                    <h3> Design </h3>
+                    <p> Exhibition posters, site redesigns, marketing materials, work completed for class. </p><br>
+                    <a href="html/design.html" class="button">See More</a> 
+                </div>
+
+                <div class="col3">
+                    <img src="" class="colpic">
+                    <h3> Programming </h3>
+                    <p> Website design and development, Java games, and various other coding projects.  </p><br>
+                    <a href="html/code.html" class="button">See More</a> 
+                 </div>
+
+
+                <!-- ADD A RESUME -->
+            </div>
+           <!--  <a class="backtotop" href="#about">Back To Top</a> -->
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <!-- // Footer & contact info -->
+    <footer id="contact">
+        <div class="content-wrap">
+
+
+
+
+       <!-- Social media and contact links. Add or remove any networks. -->
+
+        <div class="contact-info footer">
+            <a href="mailto:chen.s.felicia@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i><span class="sr-only">chen.s.felicia@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/chenfelicia/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+            <a href="http://77chen.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square" aria-hidden="true"></i><span class="sr-only">Tumblr</span></a>
+             <a href="http://chenfelicia.artstation.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i><span class="sr-only">Artstation</span></a>
+
+        </div>
+        <p class="footer">&copy; 2017 Felicia Chen</p>
+        </div>
+                <!--  <a class="backtotop" href="#about">Back To Top</a> -->
+    </footer>
+
+    <!-- Scripts -->
+   <script src="js/zenscroll-min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script> 
+        $("#icon").click(function () {
+            if ($(".mobile-nav").css('display') == "none") {
+             $(".mobile-nav").css('display', 'inline');
+            }
+            else {
+                $(".mobile-nav").css('display', 'none');
+            }
+    
+         });
+    </script>
+
+    </body>
+</html>
