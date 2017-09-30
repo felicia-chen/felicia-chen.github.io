@@ -255,16 +255,16 @@ header {
 
 /* Navigation 
 ______________________________________*/
+
 .nav {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:999;
 }
 .nav ul {
-    margin: 1.15rem 15rem ;
+    margin: 1.15rem 13rem ;
     margin-top: 2.1rem;
     padding: 0;
     display: flex;
@@ -339,7 +339,7 @@ ______________________________________*/
   .nav ul li a.list {display: none;}
     
   .nav ul li:first-child {
-    margin-left: -3rem;
+    margin-left: -8rem;
     display: block;
 }
   .nav ul #icon {
@@ -435,8 +435,6 @@ ______________________________________*/
     cursor: pointer;
 }
 
-
-
 /*Vis Dev Portfolio Styles
 ______________________________________*/
 /*.vis-dev {
@@ -466,6 +464,16 @@ ______________________________________*/
     max-width: 85%;
     text-align: center;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolio img {
+    width: 100%;
+    padding: 1rem;
+    margin:  0 auto;
+    display: block;
+
+    }
 }
 /*Environment / Design Styles
 ______________________________________*/
