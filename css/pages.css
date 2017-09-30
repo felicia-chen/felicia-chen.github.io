@@ -1,0 +1,568 @@
+/*Color Palette
+_____________________
+#0C1821 - dark blueu black
+#1B2A41 - dark blue
+#324A5F - lighter blue green
+#CCC9DC - lavendar
+
+*/
+
+/*Global styles
+______________________________________*/
+
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-size: 62.5%
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 4.5rem;
+    font-weight:100;
+    margin-bottom: 0;
+
+}
+h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight:100;
+}
+h3 {
+    margin: 0;
+}
+h4 {
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+a {
+    color: #324A5F;
+    font-weight: 100;
+}
+
+.content-wrap {
+    max-width: 200rem;
+    margin: 0 auto;
+    padding: 6rem 5rem;
+    overflow: auto;
+}
+ul, p {
+    margin: 0;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    font-weight:100;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.backtotop {
+    text-align: left;
+    color: black;
+}
+
+
+
+
+/*Img Expansion styles
+______________________________________*/
+
+#myImg0:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover,
+#myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover,
+#myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+    position: fixed;
+    margin: auto;
+    display: inline-block;
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    width: auto;
+    left:0;
+    right:0;
+    margin-top: -2.5em;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: 50em auto;
+    position: fixed;
+    display: inline-block;
+    max-width: 80%;
+    max-height: 100px;
+    left:0;
+    right:0;
+    text-align: center;
+    color: #ccc;
+    margin-top: 39%;
+    z-index: 1;
+
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Add Animation - Zoom in the Modal 
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+} */
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    #caption {
+        margin-top: 20%;
+    }
+}
+
+
+/*Header and Footer styles
+______________________________________*/
+
+footer {
+    background: none; /*#0C1821;*/
+    color: #324A5F;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+
+header {
+    position: relative;
+}
+
+
+.footer {
+    text-align: center;
+}
+.contact-info a {
+    margin: 1rem;
+    text-decoration: none;
+}
+.gmail {
+    font-size: 0.7em;
+}
+
+
+/* Navigation 
+______________________________________*/
+
+.nav {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav ul {
+    margin: 1.15rem 13rem ;
+    margin-top: 2.1rem;
+    padding: 0;
+    display: flex;
+}
+.nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+}
+.nav ul li a.list {
+    display: block;
+    line-height: 1.3rem;
+    padding: 1.2rem 2.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+.nav ul li:first-child {
+    margin-right: auto;
+    display: block;
+}
+.nav ul li a.logo {
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav ul li a:hover {
+    text-decoration: none;
+    color: #83c0ef;
+    
+}
+
+.dropdown {
+        display:inline-block;
+}
+.dropdown-content {
+    background: rgba(255, 255, 255, 0.98);
+    min-width: 160px;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black; 
+    padding: 0.3rem 1.9rem 0.8rem 1.9rem;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    font-size: 1.2rem;
+}
+
+.dropdown-content a:hover {
+    color: #83c0ef;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav ul #icon {
+    display: none;
+}
+.nav ul #icon:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .nav ul li a.list {display: none;}
+    
+  .nav ul li:first-child {
+    margin-left: -8rem;
+    display: block;
+}
+  .nav ul #icon {
+    text-decoration: none;
+    float: right;
+    display: block;
+    margin-left: 1rem;
+  }
+    .responsive ul #icon:hover {
+        cursor: pointer;
+    }
+}
+
+
+.nav ul li #icon {
+    display: none;
+}
+.nav ul li #icon:hover {
+    cursor: pointer;
+}
+
+
+.mobile-nav {
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.mobile-nav  ul {
+    padding: 0;
+    white-space: nowrap;
+}
+.mobile-nav  ul li {
+    list-style-type: none;
+    letter-spacing: 0.2rem;
+}
+.mobile-nav ul li .list {
+    display: inline-block;
+    list-style-type: none;
+    white-space: nowrap;
+}
+.mobile-nav  ul li a.list {
+    display: block;
+    line-height: 1.3rem;
+    padding: 1.2rem 2.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+
+.mobile-nav  ul li a:hover {
+    text-decoration: none;
+    color: #83c0ef;
+    
+}
+
+.mobile-dropdown {
+        display:inline-block;
+}
+.mobile-dropdown-content {
+    min-width: 160px;
+}
+
+.mobile-dropdown-content a {
+    padding: 0.3rem 1.9rem 0.8rem 1.9rem;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    font-size: 1.2rem;
+}
+
+.mobile-dropdown-content a:hover {
+    color: #83c0ef;
+
+}
+
+.mobile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.responsive ul #icon {
+    text-decoration: none;
+    float: right;
+    display: inline-block;
+    margin-left: 1rem;
+}
+.responsive ul #icon:hover {
+    cursor: pointer;
+}
+
+/*Vis Dev Portfolio Styles
+______________________________________*/
+/*.vis-dev {
+    background: rgba(0,0,0,0.1);
+} */
+.portfolio img {
+    width: 75%;
+    padding: 2rem;
+    margin:  0 auto;
+    display: block;
+
+}
+.portfolio h2 {
+    text-align: center;
+}
+
+.portfolio .first {
+    margin-top: 12rem;
+}
+
+.portfolio h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.portfolio p {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolio img {
+    width: 100%;
+    padding: 1rem;
+    margin:  0 auto;
+    display: block;
+
+    }
+}
+/*Environment / Design Styles
+______________________________________*/
+
+.masonry {
+    margin: 0 auto; 
+    margin: 12em;
+    column-count: 4;
+    column-gap: 1em;
+}
+
+.item {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+
+/* ---- grid ---- */
+
+
+
+/* clear fix */
+
+
+/* ---- .grid-item ---- */
+
+
+.grid-item img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+
+        .grid {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 12em;
+
+    }
+}
+
+@media only screen and (max-width:800px) and (min-width:600px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+        .grid {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 12em;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:800px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+
+
+
+/*Code Portfolio Styles
+______________________________________*/
+.codeportfolio {
+    height: 70rem;
+}
+
+.codeportfolio h2 {
+    text-align: center;
+    margin-top: 20rem;
+    letter-spacing: 0.2em;
+
+}
