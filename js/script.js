@@ -6,6 +6,40 @@ window.addEventListener("beforeunload", function () {
   document.body.classList.add("animate-out");
 });
 
+//masonry
+$(document).ready(function() {
+    $(function(){
+        var $container = $('.masonry');
+        $container.imagesLoaded( function(){
+            $container.masonry({
+                itemSelector : '.item'
+            });
+        });
+    });
+});
+
+//click on art
+$(document).ready(function() {
+    //expand nav
+    $("#icon").click(function () {
+        if ($(".mobile-nav").css('display') == "none") {
+            $(".mobile-nav").css('display', 'inline');
+        }
+        else {
+            $(".mobile-nav").css('display', 'none');
+        }
+    });
+    //expand art
+    $(".mobile-dropbtn").click(function () {
+        if ($(".mobile-dropdown-content").css('display') === "none") {
+            $(".mobile-dropdown-content").css('display', 'block');
+        }
+        else {
+            $(".mobile-dropdown-content").css('display', 'none');
+        }   
+    });
+});
+
 //Image Expansion Script
 var modal = document.getElementById('myModal');
 var slideIndex = 1;
