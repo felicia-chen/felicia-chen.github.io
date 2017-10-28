@@ -246,6 +246,7 @@ ______________________________________*/
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 .nav ul {
     margin: 1.15rem 13rem ;
@@ -390,6 +391,7 @@ ______________________________________*/
 }
 .mobile-dropdown-content {
     min-width: 160px;
+    display: none;
 }
 
 .mobile-dropdown-content a {
