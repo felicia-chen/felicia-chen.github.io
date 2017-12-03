@@ -92,8 +92,6 @@ ul, p {
 }
 
 
-
-
 /*Img Expansion styles
 ______________________________________*/
 
@@ -551,8 +549,6 @@ ______________________________________*/
 }
 
 
-
-
 /*Code Portfolio Styles
 ______________________________________*/
 .codeportfolio, .animportfolio {
@@ -565,8 +561,6 @@ ______________________________________*/
     letter-spacing: 0.2em;
 
 }
-
-
 /*Animation Styles
 ______________________________________*/
 
@@ -582,3 +576,30 @@ ______________________________________*/
 }
 
 
+/*3D portfolio Styles
+______________________________________*/
+hr {
+    width: 75%;
+    margin-bottom: 24px;
+    height: 2px;
+    background-color: black;
+        color: black;
+}
+
+#portfolioThreeD {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#portfolioThreeD img {
+    max-width: 60%;
+    text-align: center;
+}
+
+
+#portfolioThreeD h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
