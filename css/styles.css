@@ -128,12 +128,13 @@ footer {
 
 header {
     position: relative;
+    height: 100vh;
 }
 
 .backgroundindex {
     display: inline-block;
     width: 100%;
-    height: 80rem;
+    height: 100vh;
     font-size: 10rem;
     background: /*linear-gradient(rgba(255,255,255,0.2),
         rgba(0,0,0,0.01)),*/
@@ -468,7 +469,7 @@ ______________________________________*/
         .backgroundindex {
     display: inline-block;
     width: 100%;
-    height: 60rem;
+    height: 100vh;
     font-size: 10rem;
     background: /*linear-gradient(rgba(255,255,255,0.2),
         rgba(0,0,0,0.01)),*/
