@@ -592,7 +592,7 @@ hr {
 }
 
 #portfolioThreeD img {
-    max-width: 66%;
+    max-width: 70%;
     text-align: center;
 }
 
@@ -614,5 +614,10 @@ hr {
 @media only screen and (max-width: 700px){
    #portfolioThreeD img {
         max-width: 100%;
+    }
+}
+@media only screen and (min-width: 4000px){
+   #portfolioThreeD img {
+        max-width: 70%;
     }
 }
