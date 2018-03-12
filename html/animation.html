@@ -4,111 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felicia Chen</title>
-        <script src="https://use.fontawesome.com/d853a9d575.js"></script>
+    <script src="https://use.fontawesome.com/d853a9d575.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link rel="stylesheet" href="../css/pages.css">
 </head>
+    
+    <!-- Scripts -->
+    <script src="../js/zenscroll-min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/masonry.pkgd.js"></script>
+    <script src="../js/script.js"></script>
+    <script> 
+    $(function(){
+      $("#contact").load("footer.html"); 
+        $("#about").load("nav.html");
+    });
+    </script> 
+    
 <body class="animate-in">
     <!-- // Intro -->
-    <header id="about">
-
-        
-         <nav class="nav" id="nav">
-            <ul>
-                <li><a href="../index.html" class="logo">Felicia Chen</a></li><li id="icon"> &#9776;</li>
-              <li><a href="../index.html#introduction" class="list">About</a></li>
-                <li><a href="../html/demo.html" class="list"> Demo Reel </a> </li>
-              <li><a href="../html/visdev.html" class="list">Vis Dev Portfolio</a></li>
-              <li class="dropdown"><a href="#art" class="list dropbtn">Art</a>
-                  <div class="dropdown-content">
-                        <a href="3D.html">3D Modelling</a>
-                      <a href="environments.html">Environments</a>
-                      <a href="design.html">Design</a>
-                      <a href="animation.html">Animation</a>
-                  </div>
-              </li>
-              <li><a href="code.html" class="list">Code</a></li>
-              <li><a href="#contact" class="list">Contact</a></li>
-          </ul>
-        </nav>
-        
-        <nav class="mobile-nav" id="mobile-nav">
-        <ul>
-              <li><a href="../index.html#introduction" class="list">About</a></li>
-                <li><a href="../html/demo.html" class="list"> Demo Reel </a> </li>
-              <li><a href="../html/visdev.html" class="list">Vis Dev Portfolio</a></li>
-              <li class="mobile-dropdown"><a href="#art" class="list mobile-dropbtn">Art</a>
-                  <div class="mobile-dropdown-content">
-                      <a href="3D.html">3D Modelling</a>
-                      <a href="environments.html">Environments</a>
-                      <a href="design.html">Design</a>
-                      <a href="animation.html">Animation</a>
-                  </div>
-              </li>
-              <li><a href="code.html" class="list">Code</a></li>
-              <li><a href="#contact" class="list">Contact</a></li>
-          </ul>
-        </nav>
-        
-        
-        
-    
-    </header>
+    <header id="about"></header>
 
     <main>
-
         <section id="animportfolio" class="animportfolio">
             <div class="content-wrap">
                 <p> Loading animations created with Photoshop - imitates movement of water </p>
                  <img style = "width: 120px; height: 120px" class = "anim" src="../images/Animations/sloshing-complex.gif" alt="light">
                 <img style = "width: 200px; height: 200px" class = "anim" src="../images/Animations/filling.gif" alt="light">
                 <img style = "width: 120px; height: 120px" class = "anim" src="../images/Animations/round.gif" alt="light">
-                
-
-
             </div>
            <!--  <a class="backtotop" href="#about">Back To Top</a> -->
         </section>
-
-
     </main>
-
-
-
-
-
+        
+        
 <!-- // Footer & contact info -->
-    <footer id="contact">
-        <div class="content-wrap">
-        <h2 class="footer"></h2>
+    <div id="contact"></div>
 
-
-
-
-       <!-- Social media and contact links. Add or remove any networks. -->
-
-        <div class="contact-info footer">
-            <a href="mailto:chen.s.felicia@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i><span class="sr-only">chen.s.felicia@gmail.com</span></a>
-            <a href="https://www.linkedin.com/in/chenfelicia/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
-            <a href="http://77chen.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square" aria-hidden="true"></i><span class="sr-only">Tumblr</span></a>
-             <a href="http://artstation.com/chenfelicia/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i><span class="sr-only">Artstation</span></a>
-
-
-        </div>
-        <p class="footer">&copy; 2017-18 Felicia Chen</p>
-        </div>
-                <!--  <a class="backtotop" href="#about">Back To Top</a> -->
-    </footer>
-
-
-    <!-- Scripts -->
-    <script src="../js/zenscroll-min.js"></script>
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/masonry.pkgd.js"></script>
-    <script src="../js/script.js"></script>
-    <script>
-
-    </script>
 
     </body>
 </html>
