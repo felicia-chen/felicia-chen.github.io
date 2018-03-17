@@ -145,7 +145,7 @@ ______________________________________*/
     text-align: center;
     color: #ccc;
     margin-top: 39%;
-    z-index: 1;
+    z-index: 10001;
 
 }
 /* Next & previous buttons */
