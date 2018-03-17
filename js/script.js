@@ -67,9 +67,9 @@ function currentSlide(n) {
     var captionText = document.getElementById("caption");
         modal.style.display = "block";
         modalImg.src = img.src;
-        captionText.innerHTML = img.alt;
+       // captionText.innerHTML = img.alt;
             var height = img.width;
-        captionText.style.marginTop = height;
+        //captionText.style.marginTop = height;
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
