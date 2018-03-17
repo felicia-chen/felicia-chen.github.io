@@ -135,7 +135,7 @@ ______________________________________*/
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-    margin: 50em auto;
+    margin: auto;
     position: fixed;
     display: inline-block;
     max-width: 80%;
@@ -144,8 +144,8 @@ ______________________________________*/
     right:0;
     text-align: center;
     color: #ccc;
-    margin-top: 39%;
     z-index: 10001;
+    bottom: 30px;
 
 }
 /* Next & previous buttons */
