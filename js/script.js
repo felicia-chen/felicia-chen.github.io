@@ -7,10 +7,10 @@ window.addEventListener("beforeunload", function () {
 });
 
 //masonry
-$(document).ready(function () {
-    $(function () {
+$(document).ready(function() {
+    $(function(){
         var $container = $('.masonry');
-        $container.imagesLoaded(function () {
+        $container.imagesLoaded( function(){
             $container.masonry({
                 itemSelector : '.item'
             });
@@ -68,7 +68,7 @@ function currentSlide(n) {
         modal.style.display = "block";
         modalImg.src = img.src;
         captionText.innerHTML = img.alt;
-        var height = img.width;
+            var height = img.width;
         captionText.style.marginTop = height;
 
         // Get the <span> element that closes the modal
