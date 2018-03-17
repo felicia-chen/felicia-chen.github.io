@@ -17,7 +17,7 @@ $(document).ready(function() {
         });
     });
 	var scroll_start = 0;
-   	var startchange = $('#introduction);
+   	var startchange = $('#introduction');
    	var offset = startchange.offset();
     if (startchange.length){
    		$(document).scroll(function() { 
