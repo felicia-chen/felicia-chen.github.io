@@ -16,21 +16,21 @@ $(document).ready(function() {
             });
         });
     });
-	var scroll_start = 0;
-   	var startchange = $('#introduction');
-   	var offset = startchange.offset();
-    if (startchange.length){
-   		$(document).scroll(function() { 
-      		scroll_start = $(this).scrollTop();
-      		if(scroll_start > offset.top - 0) {
-         		 $("#nav").css('background-color', 'rgba(255, 255, 255, 0.9)');
-         		 $(".list").css('color', 'black');
-     		} else {
-         		 $("#nav").css('background-color', 'transparent');
-         		 $(".list").css('color', 'white');
-       		}
- 		 });
-   	}
+//	var scroll_start = 0;
+//   	var startchange = $('#introduction');
+//   	var offset = startchange.offset();
+//    if (startchange.length){
+//   		$(document).scroll(function() { 
+//      		scroll_start = $(this).scrollTop();
+//      		if(scroll_start > offset.top - 0) {
+//         		 $("#nav").css('background-color', 'rgba(255, 255, 255, 0.9)');
+//         		 $(".list").css('color', 'black');
+//     		} else {
+//         		 $("#nav").css('background-color', 'transparent');
+//         		 $(".list").css('color', 'white');
+//       		}
+// 		 });
+//   	}
     
 });
 
@@ -67,9 +67,9 @@ function currentSlide(n) {
     var captionText = document.getElementById("caption");
         modal.style.display = "block";
         modalImg.src = img.src;
-       // captionText.innerHTML = img.alt;
+        captionText.innerHTML = img.alt;
             var height = img.width;
-        //captionText.style.marginTop = height;
+        captionText.style.marginTop = height;
 
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
