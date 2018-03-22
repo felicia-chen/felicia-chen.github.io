@@ -483,6 +483,18 @@ ______________________________________*/
     padding-top: 40vh;
 
     }
+    .image {
+        margin: 0 auto;
+        display: inline-block;
+        left: 50%;
+        float: none;
+    }
+    .nav, .mobile-nav {
+        background-color:white;
+    }
+    .mobile-nav {
+     overflow-y: scroll;
+    }
 }
 
     @media only screen and (min-width: 3800px) {

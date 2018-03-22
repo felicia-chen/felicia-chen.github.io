@@ -452,7 +452,7 @@ ______________________________________*/
 }
 
 .portfolio .first {
-    margin-top: 12rem;
+    margin-top: 100px;
 }
 
 .portfolio h4 {
@@ -551,15 +551,63 @@ ______________________________________*/
 
 /*Code Portfolio Styles
 ______________________________________*/
-.codeportfolio, .animportfolio {
+.animportfolio {
     height: 70rem;
 }
-
+.codeportfolio {
+    margin-top: 100px;
+}
 .codeportfolio h2 {
     text-align: center;
-    margin-top: 20rem;
-    letter-spacing: 0.2em;
 
+}
+.codeportfolio img {
+    width: 100%;
+    padding: 1rem;
+    margin:  0 auto;
+    display: block;
+
+}
+.codeportfolio h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.codeportfolio p {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.codeportfolio table {
+    padding:0;
+    border-spacing:0;
+    border-collapse: collapse;
+    
+}
+td, th, tr {
+    padding:0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.codeportfolio .grid {
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .portfolio .first {
+    margin-top: 8rem;
+}
+    .portfolio img {
+    width: 100%;
+    padding: 1rem;
+    margin:  0 auto;
+    display: block;
+
+    }
 }
 /*Animation Styles
 ______________________________________*/
@@ -627,5 +675,11 @@ hr {
 @media only screen and (max-width: 700px){
    .demo iframe {
         max-width: 100%;
+    }
+        .nav, .mobile-nav {
+        background-color:white;
+    }
+    .mobile-nav {
+     overflow-y: scroll;
     }
 }
