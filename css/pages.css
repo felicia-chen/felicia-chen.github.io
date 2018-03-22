@@ -676,11 +676,13 @@ hr {
    .demo iframe {
         max-width: 100%;
     }
-        .nav, .mobile-nav {
-        background-color:white;
+    .nav, .mobile-nav {
+        background-color:white;      
     }
     .mobile-nav {
-     overflow-y: scroll;
+        height: 100vh;
+        padding-bottom: 5rem;
+        overflow-y: scroll;
     }
     .codeportfolio iframe {
         max-width: 100%;
