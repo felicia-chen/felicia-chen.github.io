@@ -25,10 +25,53 @@
     <header id="about"></header>
     <main>
         <section id="codeportfolio" class="codeportfolio">
-            <div class="content-wrap">
-                <h2> Coming Soon</h2>
-                <p style="text-align:center"><i> Website designed and coded using JavasScript + HTML/CSS by Felicia Chen</i> </p>
+         <p class="first"><i>  Website designed and coded using JavasScript + HTML/CSS by Felicia Chen</i></p>
+         
+         <h2> Daily Bread </h2>
+             <iframe style="margin:0 auto; display:block;" src="https://player.vimeo.com/video/261351185" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p style="width: 60%; line-height: 2"> A recipe web application that allows the user to create an account, add new recipes with directions, description, and images to a variety of categories, rate their recipes, and add recipes to a meal planner and grocery list. Designed with mockups using Photoshop and Illustrator. Developed using EJS, HTML/CSS, JavaScript, NodeJS runtime environment, Express for routing, and MongoDB for storage.</p>
+            
+            
+
+            
+              <div class="grid ">
+
+                            <center><table width=50%>
+                <tr>
+                    <td><div class="grid-item item"><img id="myImg0" src="../images/code/1.png" onclick="currentSlide(0)" alt=""></div></td>
+                    <td><div class="grid-item item"><img id="myImg1" src="../images/code/2.png" onclick="currentSlide(1)" alt=""></div></td>
+                </tr>
+                <tr>
+                    <td><div class="grid-item item"><img id="myImg2" src="../images/code/3.png" onclick="currentSlide(2)" alt=""></div></td>
+                    <td><div class="grid-item item"><img id="myImg3" src="../images/code/4.png" onclick="currentSlide(3)" alt=""></div></td>
+                </tr>
+                    <td><div class="grid-item item"><img id="myImg4" src="../images/code/5.png" onclick="currentSlide(4)" alt=""></div></td>
+                    <td><div class="grid-item item"><img id="myImg5" src="../images/code/6.png" onclick="currentSlide(5)" alt=""></div></td>
+                <tr>
+                </tr>
+             </table></center>
+
+                  <!-- The Modal -->
+              <div id="myModal" class="modal">
+                  <!--previous button and next-->
+                <a class="prev" onclick="previousSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <div class="package">
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    
+                  </div>
+              </div>
             </div>
+
+                
            <!--  <a class="backtotop" href="#about">Back To Top</a> -->
         </section>
     </main>
