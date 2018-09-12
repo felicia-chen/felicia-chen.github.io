@@ -59,41 +59,45 @@
     </header>
 
     <main>
-        <!-- // Introduction -->
-        <section id="introduction" class="introduction">
-            <div class="content-wrap">
-             <h2 style=color:#324A5F;>Hello!</h2>
-                <div class="image"><img src="images/face.jpg" width="215px" style="float:left; border-radius:50%; -webkit-shape-outside:circle(); shape-outside:circle(); padding:15px"></div>
-                <p>I'm Felicia Chen - artist, coder, and Christian.</p>
-                <p> I'm currently a <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank" style="text-decoration:none"><b style=color:#324A5F;>Digital Media Design</b></a> major at the University of Pennsylvania passionate about digital art, animation, games, and God. I've always been inspired by the world around me--from California coastline hiking trips to fantasy novels and animated films. As my major involves communications, computer science, and art, I hope to contribute both art and tech skills to bring ideas into reality! </p>
-            </div>
-           <!--  <a class="backtotop" href="#about">Back To Top</a> -->
-        </section>
-        
-        <section id="work" class="work">
-            <div class="content-wrap columns">
-
-                <div class="col1">
-                    <h3> Visual Development </h3>
-                    <p> Concept art, illustrations, and sketches with a focus on mood and lighting.</p><br>
-                    <a href="html/visdev.html" class="button">See More</a> 
+        <section id="main" class="main">
+            <!-- // Introduction -->
+            <section id="introduction" class="introduction">
+                <div class="content-wrap">
+                 <h2 style=color:#324A5F;>Hello!</h2>
+                    <div class="image"><img src="images/face.jpg" width="215px" style="float:left; border-radius:50%; -webkit-shape-outside:circle(); shape-outside:circle(); padding:15px"></div>
+                    <p>I'm Felicia Chen - artist, coder, and Christian.</p>
+                    <p> I'm currently a <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank" style="text-decoration:none"><b style=color:#324A5F;>Digital Media Design</b></a> major at the University of Pennsylvania passionate about digital art, animation, games, and God. I've always been inspired by the world around me--from California coastline hiking trips to fantasy novels and animated films. As my major involves communications, computer science, and art, I hope to contribute both art and tech skills to bring ideas into reality! </p>
                 </div>
+               <!--  <a class="backtotop" href="#about">Back To Top</a> -->
+            </section>
 
-                <div class="col2">
-                    <h3> 3D Modelling </h3>
-                    <p> Models created, textured, and rendered using Maya and Arnold renderer. </p><br>
-                    <a href="html/3D.html" class="button">See More</a> 
+            <section id="work" class="work">
+                <div class="content-wrap columns">
+
+                    <div class="col1">
+                        <h3> Visual Development </h3>
+                        <p> Concept art, illustrations, and sketches with a focus on mood and lighting.</p><br>
+                        <a href="html/visdev.html" class="button">See More</a> 
+                    </div>
+
+                    <div class="col2">
+                        <h3> 3D Modelling </h3>
+                        <p> Models created, textured, and rendered using Maya and Arnold renderer. </p><br>
+                        <a href="html/3D.html" class="button">See More</a> 
+                    </div>
+
+                    <div class="col3">
+                        <h3> Programming </h3>
+                        <p> Website design and development, Java games, and various other coding projects.  </p><br>
+                        <a href="html/code.html" class="button">See More</a> 
+                     </div>
+
+
+                    <!-- ADD A RESUME -->
                 </div>
-
-                <div class="col3">
-                    <h3> Programming </h3>
-                    <p> Website design and development, Java games, and various other coding projects.  </p><br>
-                    <a href="html/code.html" class="button">See More</a> 
-                 </div>
-
-
-                <!-- ADD A RESUME -->
-            </div>
+            </section>
+            <!-- // Footer & contact info -->
+            <div id="contact"></div>
         </section>
     </main>
         <!-- Scripts -->
@@ -105,7 +109,5 @@
       $("#contact").load("html/footer.html"); 
     });
     </script> 
- <!-- // Footer & contact info -->
-    <div id="contact"></div>
     </body>
 </html>
