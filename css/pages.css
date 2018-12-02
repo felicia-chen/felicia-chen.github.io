@@ -338,7 +338,7 @@ ______________________________________*/
   .nav ul li a.list {display: none;}
     
   .nav ul li:first-child {
-    margin-left: -8rem;
+    margin-left: -11rem;
     display: block;
 }
   .nav ul #icon {
@@ -364,11 +364,11 @@ ______________________________________*/
 .mobile-nav {
     display: none;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 7.5rem;
+    margin-top: 6.9rem;
     padding-bottom: 2rem;
 }
 .mobile-nav  ul {

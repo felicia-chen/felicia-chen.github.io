@@ -323,7 +323,7 @@ ______________________________________*/
   .nav ul li a.list {display: none;}
     
   .nav ul li:first-child {
-    margin-left: -8rem;
+    margin-left: -11rem;
     display: block;
 }
   .nav ul #icon {
