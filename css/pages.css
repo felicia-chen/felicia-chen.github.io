@@ -478,6 +478,47 @@ ______________________________________*/
 
     }
 }
+
+/* Music Styles
+______________________________________*/
+
+.music h2 {
+    text-align: center;
+}
+
+.music {
+    margin-top: 100px;
+}
+
+.music h3 {
+    text-align: left;
+    margin: 10px;
+    padding-left: 17%;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.music p {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+.audio {
+    width: 75%;
+}
+
+@media only screen and (max-width: 700px) {
+    .music.first {
+    margin-top: 8rem;
+}
+    .music img {
+    width: 100%;
+    padding: 1rem;
+    margin:  0 auto;
+    display: block;
+
+    }
+}
 /*Environment / Design Styles
 ______________________________________*/
 
@@ -672,6 +713,9 @@ hr {
 
 /*demo reel
 ---------------------------------*/
+#portfolioThreeD demo h2 {
+    font-size: 20px;
+}
 @media only screen and (max-width: 700px){
    .demo iframe {
         max-width: 100%;
