@@ -537,10 +537,12 @@ ______________________________________*/
     text-align: center;
     margin: 0 auto;
 }
-
 .masonry {
     margin: 0 auto; 
-    margin: 12em;
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-bottom: 12em;
+    margin-top:3em;
     column-count: 4;
     column-gap: 1em;
 }
@@ -604,7 +606,6 @@ ______________________________________*/
         column-count: 4;
     }
 }
-
 
 /*Code Portfolio Styles
 ______________________________________*/
