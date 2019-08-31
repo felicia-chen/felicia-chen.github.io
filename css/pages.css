@@ -440,6 +440,14 @@ ______________________________________*/
 /*.vis-dev {
     background: rgba(0,0,0,0.1);
 } */
+
+.portfolio hr {
+    width: 75%;
+    padding-top: 100px;
+    height: 2px;
+    background-color: black;
+        color: black;
+}
 .portfolio img {
     width: 75%;
     padding: 2rem;
