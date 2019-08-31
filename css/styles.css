@@ -137,7 +137,7 @@ header {
     height: 100vh;
     font-size: 10rem;
     background: linear-gradient(rgba(255,255,255,0.2),
-        rgba(0,0,75,0.3)),
+        rgba(0,0,92,0.3)),
         url(../images/002.png) no-repeat fixed;
     background-size: cover;
     background-position: center;
@@ -241,7 +241,7 @@ header {
 ______________________________________*/
 .nav {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     top: 0;
     width: 100%;
