@@ -537,7 +537,7 @@ ______________________________________*/
     text-align: center;
     margin: 0 auto;
 }
-.masonry {
+.envportfolio .masonry {
     margin: 0 auto; 
     margin-left: 12em;
     margin-right: 12em;
@@ -547,7 +547,7 @@ ______________________________________*/
     column-gap: 1em;
 }
 
-.item {
+.envportfolio .item {
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
