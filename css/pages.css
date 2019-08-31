@@ -537,17 +537,15 @@ ______________________________________*/
     text-align: center;
     margin: 0 auto;
 }
-.envportfolio .masonry {
+
+.masonry {
     margin: 0 auto; 
-    margin-left: 12em;
-    margin-right: 12em;
-    margin-bottom: 12em;
-    margin-top:3em;
+    margin: 12em;
     column-count: 4;
     column-gap: 1em;
 }
 
-.envportfolio .item {
+.item {
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
