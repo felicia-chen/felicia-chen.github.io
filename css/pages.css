@@ -532,6 +532,10 @@ ______________________________________*/
     margin-top: 100px;
 }
 
+.designportfolio .first {
+    margin-top: 100px;
+}
+
 .envportfolio p {
     max-width: 85%;
     text-align: center;
@@ -540,7 +544,9 @@ ______________________________________*/
 
 .masonry {
     margin: 0 auto; 
-    margin: 12em;
+    margin-top: 2em;
+    margin-left: 12em;
+    margin-right:12em;
     column-count: 4;
     column-gap: 1em;
 }
