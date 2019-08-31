@@ -528,6 +528,15 @@ ______________________________________*/
 }
 /*Environment / Design Styles
 ______________________________________*/
+.envportfolio .first {
+    margin-top: 100px;
+}
+
+.envportfolio p {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .masonry {
     margin: 0 auto; 
