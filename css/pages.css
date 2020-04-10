@@ -97,7 +97,10 @@ ______________________________________*/
 
 #myImg0:hover, #myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover,
 #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover,
-#myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover{
+#myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover, #myImg16:hover,
+#myImg17:hover, #myImg18:hover, #myImg19:hover, #myImg20:hover, #myImg21:hover,
+#myImg22:hover, #myImg23:hover, #myImg24:hover, #myImg25:hover, #myImg26:hover, 
+#myImg27:hover, #myImg28:hover, #myImg29:hover, #myImg30:hover, #myImg31:hover{
     opacity: 0.75;
     cursor: pointer;
 }
