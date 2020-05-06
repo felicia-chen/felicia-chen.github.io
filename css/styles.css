@@ -20,9 +20,7 @@ ______________________________________*/
 .fa-custom-lkin:before {
         content: "\f08c"; 
 }
-.fa-custom-web:before {
-        content: "\f16d"; 
-}
+
 
 .animate-in {
     -webkit-animation: fadeIn .5s ease-in;
