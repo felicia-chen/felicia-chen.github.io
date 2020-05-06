@@ -9,6 +9,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-149846169-1');
+    
 </script>
 
     <meta charset="UTF-8">
@@ -16,7 +17,12 @@
     <title>Felicia Chen</title>
     <script src="https://use.fontawesome.com/d853a9d575.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script> 
+    $(function(){
+        $("#navi").load("html/navhomepage.html");
+    });
+    </script> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -30,46 +36,9 @@
                     <a href="#introduction"><img src="images/downthinwhite.png" height=35px width=35px></a>
                 </div>
         </div>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="#about" class="logo">Felicia Chen</a></li><li id="icon"> &#9776;</li>
-                <li><a href="#introduction" class="list" id="intro">About</a></li>
-                <li><a href="../html/demo.html" class="list"> Demo Reel </a> </li>
-                <li><a href="html/visdev.html" class="list">Concepts</a></li>
-                <li class="dropdown"><a href="#art" class="list dropbtn">Art</a>
-                    <div class="dropdown-content">
-                        <a href="html/environments.html">Paintings</a>
-                        <a href="html/3D.html">3D Modeling</a>
-                        <a href="html/design.html">Design</a>
-                        <a href="html/animation.html">Animation</a>
-<!--                        <a href="html/misc.html">Misc</a>-->
-                    </div>
-                </li>
-                <li><a href="html/code.html" class="list">Code</a></li>
-                 <li><a href="html/music.html" class= "list"> Music Covers </a></li> 
-<!--                <li><a href="#contact" class="list">Contact</a></li>-->
-            </ul>
-        </nav>
-        
-        <nav class="mobile-nav" id="mobile-nav">
-             <ul>
-                <li><a href="#introduction" class="list" id="intro">About</a></li>
-                <li><a href="../html/demo.html" class="list"> Demo Reel </a> </li>
-                <li><a href="html/visdev.html" class="list">Concepts</a></li>
-                <li class="mobile-dropdown"><a href="#art" class="list mobile-dropbtn">Art</a>
-                    <div class="mobile-dropdown-content">
-                        <a href="html/environments.html">Paintings</a>
-                        <a href="html/3D.html">3D Modeling</a>
-                        <a href="html/design.html">Design</a>
-                        <a href="html/animation.html">Animation</a>
-<!--                        <a href="html/misc.html">Misc</a>-->
-                    </div>
-                </li>
-                <li><a href="html/code.html" class="list">Code</a></li>
-                 <li><a href="html/music.html" class= "list"> Music Covers </a></li> 
-<!--                <li><a href="#contact" class="list">Contact</a></li>-->
-            </ul>
-        </nav>
+        <header id ="navi">
+            
+        </header>
     </header>
 
     <main>
@@ -81,8 +50,7 @@
                     <div class="image"><img src="images/profile0.png" width="215px" style="float:left; border-radius:50%; -webkit-shape-outside:circle(); shape-outside:circle(); padding:15px"></div>
                     <p>I'm Felicia Chen - artist and Jesus-follower :) </p>
                     <p> I graduated from the University of Pennsylvania with a <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank" style="text-decoration:none"><b style=color:#324A5F;>BSE in computer graphics</b></a> in Fall 2019. 
-                        I'm passionate about stories and worlds, and I love hiking, cooking, and music transcription in my free time. I have worked with <b> Netflix Animation, Taiko Studios, DreamWorks TV, Disney Feature, BOOM! Studios/Cartoon Network, </b> and individual clients. I'm currently
-                        a visual development artist at DreamWorks Feature.
+                        I'm passionate about stories and worlds, and I love hiking, cooking, and music transcription in my free time. I have worked with <b> Taiko Studios, DreamWorks Feature and TV, Disney Feature, BOOM! Studios/Cartoon Network, </b> and individual clients. 
                         Feel free to contact chen.s.felicia@gmail.com for any inquiries!
                         
                      </p>
