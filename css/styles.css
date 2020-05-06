@@ -349,11 +349,11 @@ ______________________________________*/
 .mobile-nav {
     display: none;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 7.5rem;
+    margin-top: 6.9rem;
     padding-bottom: 2rem;
 }
 .mobile-nav  ul {
@@ -471,8 +471,9 @@ ______________________________________*/
     font-size: 10rem;
     background: /*linear-gradient(rgba(255,255,255,0.2),
         rgba(0,0,0,0.01)),*/
-        url(../images/skysmall.png) no-repeat fixed;
+        url(../images/environments/joyoflife3.jpg) no-repeat fixed;
     background-size: cover;
+    background-position: center;
     }
     .col1, .col2, .col3 { 
         display: block;
