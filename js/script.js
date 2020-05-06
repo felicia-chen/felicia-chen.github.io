@@ -34,7 +34,7 @@ $(document).ready(function() {
     
 });
 
-//click on art
+//click on mobile navigation drawer
 $(document).ready(function() {
     //expand nav
     $("#icon").click(function () {
@@ -53,6 +53,10 @@ $(document).ready(function() {
         else {
             $(".mobile-dropdown-content").css('display', 'none');
         }   
+    });
+    //click on intro
+    $("#intro").click(function () {
+            $(".mobile-nav").css('display', 'none');
     });
 });
 
