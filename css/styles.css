@@ -54,19 +54,19 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
     margin: 0;
     padding:0;
 }
  
 h1, h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 h1 {
     font-size: 4rem;
     font-weight:100;
     margin-bottom: 0.5em;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.35em;
     padding: 0 4rem 0; 
 
 }
@@ -75,10 +75,11 @@ h2 {
     margin-top: 1.2rem;
     margin-bottom: 1.5rem;
     font-weight:100;
+    letter-spacing: 0.15em;
 }
 h3 {
     margin: 0;
-    font-size: 1.6em;
+    font-size: 1.9em;
     font-weight: 100;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -87,8 +88,8 @@ h3 {
     color: #324A5F;
 }
 h4 {
-    font-size: 1.3rem;
-    letter-spacing: 0.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 1rem;
     font-weight: 100;
     text-align: center;
     color: white;
@@ -98,6 +99,7 @@ h4 {
 a {
     color: #324A5F;
     font-weight: 100;   
+
 }
 
 .content-wrap {
@@ -253,7 +255,7 @@ header {
 ______________________________________*/
 .nav {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
