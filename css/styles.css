@@ -10,6 +10,19 @@ _____________________
 /*Global styles
 ______________________________________*/
 
+.fa-custom-twtr:before {
+        content: "\f099"; 
+}
+    
+.fa-custom-insta:before {
+        content: "\f16d"; 
+}
+.fa-custom-lkin:before {
+        content: "\f08c"; 
+}
+.fa-custom-web:before {
+        content: "\f16d"; 
+}
 
 .animate-in {
     -webkit-animation: fadeIn .5s ease-in;
