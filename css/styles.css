@@ -150,7 +150,7 @@ header {
     height: 100vh;
     font-size: 10rem;
     background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.05), rgba(0,0,0,0.09), rgba(0,0,0,0.4)),
-        url(../images/environments/joyoflife3.jpg) no-repeat fixed;
+        url(../images/joyoflife3.png) no-repeat fixed;
     background-size: cover;
     background-position: center;
     
@@ -366,7 +366,7 @@ ______________________________________*/
     position: fixed;
     top: 0;
     width: 100%;
-    margin-top: 6.9rem;
+    margin-top: 6.5rem;
     padding-bottom: 2rem;
 }
 .mobile-nav  ul {
@@ -484,7 +484,7 @@ ______________________________________*/
     font-size: 10rem;
     background: /*linear-gradient(rgba(255,255,255,0.2),
         rgba(0,0,0,0.01)),*/
-        url(../images/environments/joyoflife3.jpg) no-repeat fixed;
+        url(../images/sky.png) no-repeat fixed;
     background-size: cover;
     background-position: center;
     }
