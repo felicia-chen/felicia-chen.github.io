@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon"
+          type="image/png"
+          href="http://felicia-chen.com/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicia Chen</title>
+    <script src="https://use.fontawesome.com/d853a9d575.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+    <!-- Scripts -->
+<!--    <script src="../js/zenscroll-min.js"></script>-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+    $(function(){
+      $("#contact").load("../html/footer.html");
+        $("#about").load("../html/nav.html");
+    });
+    </script>
+
+
+    <!--CODE TO SOLVE PROBLEM WHERE CLICKING BACK IN BROWSER CAUSED WHITE PAGE -->
+    <script>
+    if(performance.navigation.type == 2){
+       location.reload(true);
+    }
+    </script>
+
+<body class="animate-in music">
+    <!-- // Intro -->
+    <header id="about"></header>
+
+    <main>
+        <!-- // Images Portfolio -->
+
+        <section style="padding-bottom: 25%" id="music" class="music">
+
+            <h3>My Universe - Stray Kids </h3>
+            <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/myuniverse.mp3" type="audio/mpeg" >
+            <h3>風の記憶 / Memories of Wind - Anri Kumaki </h3>
+            <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/kazenokioku.mp3" type="audio/mpeg" >
+                <h3>青の蛍言葉 / Summer of Firefly Words - SeA0</h3>
+            <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/seA0.mp3" type="audio/mpeg">
+                <h3>僕が死のうと思ったのは / The Reason Why I Thought I'd Die - amazarashi</h3>
+            <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/bokuga.mp3" type="audio/mpeg">
+                 <h3>The Nights - Avicii </h3>
+                <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/thenights.mp3" type="audio/mpeg">
+                </audio> </p>
+            <h3>Never - Nation's Son </h3>
+               <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/never_sm.mp3" type="audio/mpeg">
+               </audio> </p>
+            <h3>Naru Embracing the Light - Gareth Coker </h3>
+                <p><audio controls class="audio" controls controlsList="nodownload">
+             <source src="../music/naruembracingthelight.mp3" type="audio/mpeg">
+                </audio> </p>
+            <h3>Together We Map the World - John Powell </h3>
+                <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/togetherwemaptheworld.mp3" type="audio/mpeg">
+                </audio> <br></p>
+            <h3>I Need U - BTS </h3>
+                <p><audio controls class="audio" controls controlsList="nodownload">
+              <source src="../music/ineedu.mp3" type="audio/mpeg">
+                </audio> <br></p>
+           <!--  <a class="backtotop" href="#about">Back To Top</a> -->
+        </section>
+    </main>
+
+<!-- // Footer & contact info -->
+    <div id="contact"></div>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon"
+          type="image/png"
+          href="http://felicia-chen.com/images/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149846169-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149846169-1');
+</script>
+
+<!--CODE TO SOLVE PROBLEM WHERE CLICKING BACK IN BROWSER CAUSED WHITE PAGE -->
+<script>
+if(performance.navigation.type == 2){
+   location.reload(true);
+}
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicia Chen</title>
+    <script src="https://use.fontawesome.com/d853a9d575.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+    <!-- Scripts -->
+    <script src="../js/zenscroll-min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+    $(function(){
+      $("#contact").load("../html/footer.html");
+        $("#about").load("../html/nav.html");
+    });
+    </script>
+
+<body class="animate-in">
+    <!-- // Intro -->
+    <header id="about"></header>
+
+    <main>
+
+     <section id="portfolioThreeD" class="portfolioThreeD">
+         <p><i> Visual Development for DreamWorks's Spirit Untamed</i></p>
+
+         <p><img src="../images/visdev/hellmountain1.jpg"></p>
+        <p><img src="../images/visdev/hellmtn2.jpg"></p>
+        <p><img src="../images/visdev/luckybedroom.jpg"></p>
+         <p><img src="../images/visdev/02_bedroom.jpg"></p>
+         <p><img src="../images/visdev/03_bedroomprops.jpg"></p>
+         <p><img src="../images/visdev/04_props.jpg"></p>
+         <p><img src="../images/visdev/05_milagrotrunk.jpg"></p>
+         <p><img src="../images/visdev/014_rock.jpg"></p>
+         <p><img src="../images/visdev/04_colorkeys.jpg"></p>
+
+
+     </section>
+    </main>
+
+<!-- // Footer & contact info -->
+    <div id="contact"></div>
+
+
+    </body>
+</html>
