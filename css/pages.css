@@ -558,9 +558,11 @@ ______________________________________*/
 }
 /*Environment / Design Styles
 ______________________________________*/
+.envportfolio {
+    padding-top: 7rem;
+}
 .envportfolio .first {
     margin-top: 100px;
-    padding-top: 7rem;
 }
 
 .designportfolio .first {
