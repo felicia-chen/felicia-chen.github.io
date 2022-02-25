@@ -11,14 +11,14 @@ _____________________
 ______________________________________*/
 
 .fa-custom-twtr:before {
-        content: "\f099"; 
+        content: "\f099";
 }
-    
+
 .fa-custom-insta:before {
-        content: "\f16d"; 
+        content: "\f16d";
 }
 .fa-custom-lkin:before {
-        content: "\f08c"; 
+        content: "\f08c";
 }
 
 
@@ -56,7 +56,7 @@ body {
     margin: 0;
     padding:0;
 }
- 
+
 h1, h2 {
     font-family: 'Mukta', sans-serif;
 }
@@ -65,8 +65,8 @@ h1 {
     margin-top: 5rem;
     font-weight:100;
     margin-bottom: -0.2em;
-    letter-spacing: 0.35em;
-    padding: 0 4rem 0; 
+    letter-spacing: 0.30em;
+    padding: 0 4rem 0;
 
 }
 h2 {
@@ -74,7 +74,7 @@ h2 {
     margin-top: 1.2rem;
     margin-bottom: 1.5rem;
     font-weight:100;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2rem;
 }
 h3 {
     margin: 0;
@@ -88,16 +88,16 @@ h3 {
 }
 h4 {
     font-size: 1.8rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.8rem;
     font-weight: 100;
     text-align: center;
     color: white;
     margin-bottom: -10px;
 }
-    
+
 a {
     color: #324A5F;
-    font-weight: 100;   
+    font-weight: 100;
 
 }
 
@@ -127,7 +127,7 @@ ul, p {
     padding: 1rem;
     display: inline-block;
 }
-    
+
 
 
 /*Header and Footer styles
@@ -154,7 +154,7 @@ header {
         url(../images/f2.jpg) no-repeat fixed;
     background-size: cover;
     background-position: center;
-    
+
 
 }
 .backgroundindex h1 {
@@ -169,7 +169,7 @@ header {
     bottom: 0;
     right: 0;
 }
-    
+
 .footer {
     text-align: center;
 }
@@ -191,7 +191,7 @@ header {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    
+
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -215,30 +215,30 @@ header {
     -moz-animation:bounce 1s infinite;
     -o-animation:bounce 1s infinite;
     animation:bounce 1s infinite;
-    
+
   }
 .bounce a{
     text-align: center;
 }
-  
+
   @-webkit-keyframes bounce {
     0%       { bottom:0px; }
     50%      { bottom:15px; }
     100%     {bottom:30;}
   }
-  
+
    @-moz-keyframes bounce {
     0%       { bottom:0px; }
     50%      { bottom:15px; }
     100%     {bottom:30;}
   }
-  
+
    @-o-keyframes bounce {
     0%       { bottom:0px; }
     50%      { bottom:15px; }
     100%     {bottom:30;}
   }
-  
+
    @keyframes bounce {
     0%       { bottom:0px; }
     50%      { bottom:15px; }
@@ -249,20 +249,20 @@ header {
 
 
 
-    
-/* Navigation 
+
+/* Navigation
 ______________________________________*/
 .nav {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
 }
 .nav ul {
-    margin: 1.15rem 20rem ;
-    margin-top: 1.5rem;
+    margin: 2rem 20rem ;
+    margin-top: 3.5rem;
     padding: 0;
     display: flex;
 }
@@ -279,7 +279,7 @@ ______________________________________*/
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.4rem;
-    
+
 }
 .nav ul li:first-child {
     margin-bottom: 1.rem;
@@ -287,14 +287,14 @@ ______________________________________*/
     display: block;
 }
 .nav ul li a.logo {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     text-transform: uppercase;
 }
 .nav ul li a:hover {
     text-decoration: none;
     color: #83c0ef;
-    
+
 }
 
 .dropdown {
@@ -309,7 +309,7 @@ ______________________________________*/
 }
 
 .dropdown-content a {
-    color: black; 
+    color: black;
     padding: 0.3rem 1.9rem 0.8rem 1.9rem;
     text-decoration: none;
     display: block;
@@ -335,7 +335,7 @@ ______________________________________*/
 
 @media screen and (max-width: 850px) {
   .nav ul li a.list {display: none;}
-    
+
   .nav ul li:first-child {
     margin-left: -11rem;
     display: block;
@@ -390,13 +390,13 @@ ______________________________________*/
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    
+
 }
 
 .mobile-nav  ul li a:hover {
     text-decoration: none;
     color: #83c0ef;
-    
+
 }
 
 .mobile-dropdown {
@@ -435,6 +435,10 @@ ______________________________________*/
 }
 
 
+
+
+
+
 /*main height*/
 .main {
     height: 100vh;
@@ -445,7 +449,7 @@ ______________________________________*/
 .introduction {
     margin-top: 10px;
     display: block;
-    padding-top:6rem;
+    padding-top:7rem;
 }
 
 
@@ -460,21 +464,21 @@ ______________________________________*/
 .columns .colpic {
     max-width: 250px;
 }
-.col1 { 
+.col1 {
     display: table-cell;
     max-width: 250px;
    padding-right: 2rem;
-    
+
 }
-.col2 { 
+.col2 {
     display: table-cell;
     max-width: 250px;
 }
-.col3 { 
+.col3 {
     display: table-cell;
     max-width: 250px;
     padding-left: 2rem;
-    
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -489,7 +493,7 @@ ______________________________________*/
     background-size: cover;
     background-position: center;
     }
-    .col1, .col2, .col3 { 
+    .col1, .col2, .col3 {
         display: block;
         width: 100%;
         padding: 0;
@@ -530,8 +534,6 @@ ______________________________________*/
     background-size: cover;
     background-position: center;
         }
-    
+
 
 }
-
-    
