@@ -14,6 +14,12 @@
   gtag('config', 'UA-149846169-1');
 </script>
 
+<!--CODE TO SOLVE PROBLEM WHERE CLICKING BACK IN BROWSER CAUSED WHITE PAGE -->
+<script>
+if(performance.navigation.type == 2){
+   location.reload(true);
+}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felicia Chen</title>
