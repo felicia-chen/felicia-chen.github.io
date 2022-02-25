@@ -447,10 +447,16 @@ ______________________________________*/
 /*Introduction
 ______________________________________*/
 .introduction {
-    margin-top: 10px;
+
     display: block;
     padding-top:7rem;
 }
+
+@media only screen and (max-width: 700px) {
+        .introduction {
+          text-align: center;
+        }}
+
 
 
 
@@ -489,7 +495,7 @@ ______________________________________*/
     font-size: 10rem;
     background: /*linear-gradient(rgba(255,255,255,0.2),
         rgba(0,0,0,0.01)),*/
-        url(../images/sky.png) no-repeat fixed;
+        url(../images/f2.jpg) no-repeat fixed;
     background-size: cover;
     background-position: center;
     }
