@@ -26,6 +26,8 @@
 <!--    <script src="../js/zenscroll-min.js"></script>-->
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/script.js"></script>
+
+
     <script>
     $(function(){
       $("#contact").load("../html/footer.html");
@@ -133,6 +135,13 @@
 //      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
 //    });
 //
+
+<!--menu slide down-->
+   $(function() {
+   $("#dropdownitems").click(function(){
+     $(".dropitems").slideToggle();
+   });
+});
 <!--lightbox-->
 
 function onClick(element) {
