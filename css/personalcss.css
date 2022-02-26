@@ -267,7 +267,7 @@ ______________________________________*/
     top: 0;
     width: 100%;
     margin-top: 6.9rem;
-    padding-bottom: 70rem;
+    padding-bottom: 2rem;
 }
 .mobile-nav  ul {
     margin-top:7rem;
@@ -332,6 +332,23 @@ ______________________________________*/
 }
 .responsive ul #icon:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+   .demo iframe {
+        max-width: 100%;
+    }
+    .nav, .mobile-nav {
+        background-color:white;
+    }
+    .mobile-nav {
+        height: 100vh;
+        padding-bottom: 5rem;
+        overflow-y: scroll;
+    }
+    .codeportfolio iframe {
+        max-width: 100%;
+    }
 }
 
 
