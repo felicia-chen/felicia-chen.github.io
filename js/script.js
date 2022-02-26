@@ -2,9 +2,9 @@
 
 
 //Page Transition Fades Script
-window.addEventListener("beforeunload", function () {
-  document.body.classList.add("animate-out");
-});
+// window.addEventListener("beforeunload", function () {
+//   document.body.classList.add("animate-out");
+// });
 
 //masonry
 $(document).ready(function() {
@@ -20,7 +20,7 @@ $(document).ready(function() {
 //   	var startchange = $('#introduction');
 //   	var offset = startchange.offset();
 //    if (startchange.length){
-//   		$(document).scroll(function() { 
+//   		$(document).scroll(function() {
 //      		scroll_start = $(this).scrollTop();
 //      		if(scroll_start > offset.top - 0) {
 //         		 $("#nav").css('background-color', 'rgba(255, 255, 255, 0.9)');
@@ -31,7 +31,7 @@ $(document).ready(function() {
 //       		}
 // 		 });
 //   	}
-    
+
 });
 
 //click on mobile navigation drawer
@@ -52,7 +52,7 @@ $(document).ready(function() {
         }
         else {
             $(".mobile-dropdown-content").css('display', 'none');
-        }   
+        }
     });
     //click on intro
     $("#intro").click(function () {
@@ -90,11 +90,8 @@ function currentSlide(n) {
 function previousSlide() {
     currentSlide(slideIndex - 1);
 }
-    
+
 //next slide
 function nextSlide() {
-    currentSlide(slideIndex + 1);
+    currentSlide(slideIndex + 1).fadeIn(200);
 }
-    
-
-        
