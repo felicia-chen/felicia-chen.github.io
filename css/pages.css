@@ -405,7 +405,7 @@ ______________________________________*/
     padding-bottom: 2rem;
 }
 .mobile-nav  ul {
-    margin-top:7rem;
+    margin-top:7rem; /*account for navigation */
     padding: 0;
     white-space: nowrap;
 }
@@ -477,7 +477,7 @@ ______________________________________*/
 
 .music {
 
-    padding-top: 7rem;
+    padding-top: 7rem;  /*account for navigation */
 }
 
 
@@ -514,8 +514,8 @@ ______________________________________*/
 /*Environment / Design Styles
 ______________________________________*/
 .envportfolio {
-    margin-top: 7rem;
-    padding-top: 7rem;
+    margin-top: 7rem;  /*account for navigation */
+    padding-top: 7rem;  /*account for navigation */
   }
 
 
@@ -599,8 +599,8 @@ ______________________________________*/
     height: 70rem;
 }
 .codeportfolio {
-    margin-top: 7rem;
-    padding-top: 7rem;
+    margin-top: 7rem;  /*account for navigation */
+    padding-top: 7rem;  /*account for navigation */
 }
 .codeportfolio h2 {
     text-align: center;
@@ -666,8 +666,8 @@ hr {
 }
 
 #portfolioThreeD {
-    margin-top: 7rem;
-    padding-top: 7rem;
+    margin-top: 7rem;  /*account for navigation */
+    padding-top: 7rem;  /*account for navigation */
     text-align: center;
 }
 
