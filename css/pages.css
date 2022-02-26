@@ -294,7 +294,7 @@ ______________________________________*/
     z-index: 999;
 }
 .nav ul {
-  margin: 2rem 20rem ;
+  margin: 2rem 15rem ;
   margin-top: 3.5rem;
     padding: 0;
     display: flex;
@@ -364,6 +364,12 @@ ______________________________________*/
 }
 .nav ul #icon:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav ul li:first-child {
+    margin-left: -8rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
