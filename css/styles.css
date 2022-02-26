@@ -371,6 +371,7 @@ ______________________________________*/
     padding-bottom: 2rem;
 }
 .mobile-nav  ul {
+  margin-top:7rem;
     padding: 0;
     white-space: nowrap;
 }
