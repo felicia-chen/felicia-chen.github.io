@@ -362,6 +362,16 @@ ______________________________________*/
     background-color:rgba(0,0,0,0.9);
 
 }
+.modal-content {
+  /*makes sure picture doesn't get cut off under navigation */
+      /* padding-top:200rem;  */
+}
+.slide {
+  max-width:90vw;
+  max-height:90vh;
+  height:auto;
+  width:auto;
+}
 .mySlides img {
         -webkit-transition: opacity 2000ms ease-in-out;
       -moz-transition: opacity 2000ms ease-in-out;
@@ -371,18 +381,18 @@ display: block;
   overflow: auto;
   margin: auto;
   position: absolute;
+  padding-top: 10rem;
   top: 0; left: 0; bottom: 0; right: 0;
-  padding-top: 10rem;   /*makes sure picture doesn't get cut off under navigation */
 }
 
 /* The Close Button */
 .close {
-  margin-top:9rem;
+  margin-top:13rem;
   z-index: 150;
   color: white;
   position: absolute;
   top: 10px;
-  right: 25px;
+  right: 7rem;
   font-size: 40px;
   font-weight: lighter;
 }
