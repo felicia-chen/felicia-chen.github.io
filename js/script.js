@@ -4,11 +4,22 @@
 // ---------------underline clicked nav item (NOT FOR GITHUB ONLY - SEE BELOW FOR GITHUB VERSION)--------------------------------
 // $(document).ready(function() {
 //   // var page = window.location.pathname.split("/").pop();
+//   //highlight About if it is clicked from the home page or arrow is clicked
+//   $(".nav").click(function (event) {
+//     var text = $(event.target).text();
+//     if (text == "About") {
+//       document.getElementById("introductionabout").style.color = '#83c0ef' ;
+//     }
+//   });
+//   $(".bounce").click(function (event) {
+//       document.getElementById("introductionabout").style.color = '#83c0ef' ;
+//   });
+//
 //   var url = window.location.href;
 //   var n = url.lastIndexOf('/');
 //   var result = url.substring(n + 1);
 //   var final = result.split('.')[0]; //cuts off the html part - IF GITHUB, SHOULD NOT USE THIS
-//
+// 
 //   if (result == "index.html#introduction") { // if clicked on about from outside index.html
 //     document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
 //   }
@@ -25,6 +36,17 @@
 
 $(document).ready(function() {
   // var page = window.location.pathname.split("/").pop();
+  //highlight About if it is clicked from the home page or arrow is clicked
+  $(".nav").click(function (event) {
+    var text = $(event.target).text();
+    if (text == "About") {
+      document.getElementById("introductionabout").style.color = '#83c0ef' ;
+    }
+  });
+  $(".bounce").click(function (event) {
+      document.getElementById("introductionabout").style.color = '#83c0ef' ;
+  });
+
   var url = window.location.href;
   var n = url.lastIndexOf('/');
   var result = url.substring(n + 1);
@@ -39,18 +61,6 @@ $(document).ready(function() {
   } else { //otherwise, take page name
     document.getElementById(result).style.color = '#83c0ef' ;
   }
-});
-
-
-//-----------------------------highlight About if it is clicked from the home page or arrow is clicked-------------------------------
-$(".nav").click(function (event) {
-  var text = $(event.target).text();
-  if (text == "About") {
-    document.getElementById("introductionabout").style.color = '#83c0ef' ;
-  }
-});
-$(".bounce").click(function (event) {
-    document.getElementById("introductionabout").style.color = '#83c0ef' ;
 });
 
 
