@@ -1,5 +1,60 @@
 
-//click on mobile navigation drawer
+
+
+// ---------------underline clicked nav item (NOT FOR GITHUB ONLY - SEE BELOW FOR GITHUB VERSION)--------------------------------
+// $(document).ready(function() {
+//   // var page = window.location.pathname.split("/").pop();
+//   var url = window.location.href;
+//   var n = url.lastIndexOf('/');
+//   var result = url.substring(n + 1);
+//   var final = result.split('.')[0]; //cuts off the html part - IF GITHUB, SHOULD NOT USE THIS
+//
+//   if (result == "index.html#introduction") { // if clicked on about from outside index.html
+//     document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
+//   }
+//   else if (result == "spirituntamed.html") { //if clicked on page under clientwork
+//     document.getElementById("spirituntamed").style.color = '#83c0ef' ;
+//     document.getElementById("clientwork").style.color = '#83c0ef' ;
+//   } else { //otherwise, take page name
+//     document.getElementById(final).style.color = '#83c0ef' ;
+//   }
+// });
+
+
+//------------------------------------github version only------------------------------------------------------------------------------
+
+$(document).ready(function() {
+  // var page = window.location.pathname.split("/").pop();
+  var url = window.location.href;
+  var n = url.lastIndexOf('/');
+  var result = url.substring(n + 1);
+  var final = result.split('.')[0]; //cuts off the html part - IF GITHUB, SHOULD NOT USE THIS
+
+  if (result == "index#introduction") { // if clicked on about from outside index.html
+    document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
+  }
+  else if (result == "spirituntamed") { //if clicked on page under clientwork
+    document.getElementById("spirituntamed").style.color = '#83c0ef' ;
+    document.getElementById("clientwork").style.color = '#83c0ef' ;
+  } else { //otherwise, take page name
+    document.getElementById(result).style.color = '#83c0ef' ;
+  }
+});
+
+
+//-----------------------------highlight About if it is clicked from the home page or arrow is clicked-------------------------------
+$(".nav").click(function (event) {
+  var text = $(event.target).text();
+  if (text == "About") {
+    document.getElementById("introductionabout").style.color = '#83c0ef' ;
+  }
+});
+$(".bounce").click(function (event) {
+    document.getElementById("introductionabout").style.color = '#83c0ef' ;
+});
+
+
+//----------------------------------click on mobile navigation drawer----------------------------------------------------------------
 $(document).ready(function() {
     //expand nav
     $("#icon").click(function () {
@@ -24,72 +79,6 @@ $(document).ready(function() {
             $(".mobile-nav").css('display', 'none');
     });
 });
-
-// ---------------underline clicked nav item (NOT FOR GITHUB ONLY - SEE BELOW FOR GITHUB VERSION)--------------------------------
-// $(document).ready(function() {
-//
-//   var url = window.location.href;
-//   var path = window.location.pathname;
-//   var page = path.split("/").pop();
-//   var n = url.lastIndexOf('/');
-//   var result = url.substring(n + 1);
-//   if (result == "personal.html") {
-//     document.getElementById("personalwork").style.color = '#83c0ef' ;
-//   } else if (result == "spirituntamed.html") {
-//     document.getElementById("spirituntamed").style.color = '#83c0ef' ;
-//     document.getElementById("clientwork").style.color = '#83c0ef' ;
-//   } else if (result == "code.html") {
-//     document.getElementById("code").style.color = '#83c0ef' ;
-//   } else if (result == "music.html") {
-//     document.getElementById("music").style.color = '#83c0ef' ;
-//   } else if (result == "index.html#introduction") { //to upload to github, change to index#introduction
-//     document.getElementById("introductionabout").style.color = '#83c0ef' ;
-//   }
-//
-//     $(".nav").click(function (event) {
-//       var text = $(event.target).text();
-//       if (text == "About") {
-//           document.getElementById("introductionabout").style.color = '#83c0ef' ;
-//       }
-//     });
-//     $(".bounce").click(function (event) {
-//           document.getElementById("introductionabout").style.color = '#83c0ef' ;
-//     });
-// });
-
-
-//------------------------------------github version only----------------------------------------------
-$(document).ready(function() {
-
-  var url = window.location.href;
-  var path = window.location.pathname;
-  var page = path.split("/").pop();
-  var n = url.lastIndexOf('/');
-  var result = url.substring(n + 1);
-  if (result == "personal") {
-    document.getElementById("personalwork").style.color = '#83c0ef' ;
-  } else if (result == "spirituntamed") {
-    document.getElementById("spirituntamed").style.color = '#83c0ef' ;
-    document.getElementById("clientwork").style.color = '#83c0ef' ;
-  } else if (result == "code") {
-    document.getElementById("code").style.color = '#83c0ef' ;
-  } else if (result == "music") {
-    document.getElementById("music").style.color = '#83c0ef' ;
-  } else if (result == "index#introduction") { //to upload to github, change to index#introduction
-    document.getElementById("introductionabout").style.color = '#83c0ef' ;
-  }
-
-    $(".nav").click(function (event) {
-      var text = $(event.target).text();
-      if (text == "About") {
-          document.getElementById("introductionabout").style.color = '#83c0ef' ;
-      }
-    });
-    $(".bounce").click(function (event) {
-          document.getElementById("introductionabout").style.color = '#83c0ef' ;
-    });
-});
-
 
 
 //------------------------------------MODAL SCRIPTS------------------------------------
