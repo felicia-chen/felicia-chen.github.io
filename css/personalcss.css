@@ -275,6 +275,7 @@ ______________________________________*/
     margin: 0 0 1em;
     padding: 0;
     width: 100%;
+    cursor:pointer;
 }
 
 .galleryill img {
