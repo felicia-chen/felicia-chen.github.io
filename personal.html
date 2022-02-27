@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="icon"
+          type="image/png"
+          href="https://felicia-chen.com/images/favicon.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149846169-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-149846169-1');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felicia Chen</title>
+  <script src="https://use.fontawesome.com/d853a9d575.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/globalnavstyles.css">
+  <link rel="stylesheet" href="css/personalcss.css">
+</head>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(function(){
+     $("#navigationplaceholder").load("html/nav.html");
+      $("#contact").load("html/footer.html");
+    });
+  </script>
+
+
+<body class="animate-in">
+  <header id="navigationplaceholder"></header>
+  <main>
+    <section>
+      <div id="gallery" class="masonry galleryill">
+        	<div class="item"><img src="images/environments/01.jpg"onclick="onClick(this);currentSlide(1)"></div>
+        	<div class="item"><img src="images/environments/02.jpg"onclick="onClick(this);currentSlide(2)"></div>
+        	<div class="item"><img src="images/environments/03.jpg"onclick="onClick(this);currentSlide(3)"></div>
+        	<div class="item"><img src="images/environments/04.jpg"onclick="onClick(this);currentSlide(4)"></div>
+        	<div class="item"><img src="images/environments/hei1.jpg" onclick="onClick(this);currentSlide(5)"></div>
+        	<div class="item"><img src="images/environments/field.jpg" onclick="onClick(this);currentSlide(6)"></div>
+        	<div class="item"><img src="images/environments/sunset.jpg" onclick="onClick(this);currentSlide(7)"></div>
+          <div class="item"><img src="images/environments/bridge.jpg" onclick="onClick(this);currentSlide(8)"></div>
+        	<div class="item"><img src="images/environments/f1.jpg" onclick="onClick(this);currentSlide(9)"></div>
+          <div class="item"><img src="images/environments/f2.jpg" onclick="onClick(this);currentSlide(10)"></div>
+          <div class="item"><img src="images/environments/f3.jpg"  onclick="onClick(this);currentSlide(11)"></div>
+          <div class="item"><img src="images/environments/f4.jpg" onclick="onClick(this);currentSlide(12)"></div>
+          <div class="item"><img src="images/environments/01drag.jpg" onclick="onClick(this);currentSlide(13)"></div>
+          <div class="item"><img src="images/environments/02drag.jpg"onclick="onClick(this);currentSlide(14)"></div>
+          <div class="item"><img src="images/environments/03drag.jpg"  onclick="onClick(this);currentSlide(15)"></div>
+          <div class="item"><img src="images/environments/studies0.jpg"  onclick="onClick(this);currentSlide(16)"></div>
+          <div class="item"><img src="images/environments/joyoflife1.jpg" onclick="onClick(this);currentSlide(17)"></div>
+          <div class="item"><img src="images/environments/joyoflife2.jpg"  onclick="onClick(this);currentSlide(18)"></div>
+          <div class="item"><img src="images/environments/joyoflife3.jpg"onclick="onClick(this);currentSlide(19)"></div>
+          <div class="item"><img src="images/environments/joyoflife4.jpg" onclick="onClick(this);currentSlide(20)"></div>
+          <div class="item"><img src="images/environments/02_neighborhoodog.jpg"  onclick="onClick(this);currentSlide(21)"></div>
+          <div class="item"><img src="images/environments/fight.jpg" onclick="onClick(this);currentSlide(22)"></div>
+          <div class="item"><img src="images/environments/0train0.jpg" onclick="onClick(this);currentSlide(23)"></div>
+          <div class="item"><img src="images/environments/0train1.jpg" onclick="onClick(this);currentSlide(24)"></div>
+          <div class="item"><img src="images/environments/0train2.jpg" onclick="onClick(this);currentSlide(25)"></div>
+          <div class="item"><img src="images/environments/kingdom1.jpg"  onclick="onClick(this);currentSlide(26)"></div>
+          <div class="item"><img src="images/environments/kingdom2.jpg" onclick="onClick(this);currentSlide(27)"></div>
+          <div class="item"><img src="images/environments/kingdom3.jpg" onclick="onClick(this);currentSlide(28)"></div>
+          <div class="item"><img src="images/environments/kingdom4.jpg"onclick="onClick(this);currentSlide(29)"></div>
+          <div class="item"><img src="images/environments/newfriend.jpg"  onclick="onClick(this);currentSlide(30)"></div>
+          <div class="item"><img src="images/environments/room.jpg" onclick="onClick(this);currentSlide(31)"></div>
+          <!-- <div class="item"><img src="images/environments/chaoswiderf.jpg" style="cursor:pointer" onclick="onClick(this);currentSlide(32)"></div> -->
+      </div>
+
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="modal-content">
+            	<div class="mySlides"><img src="images/environments/01.jpg" class="slide"></div>
+            	<div class="mySlides"><img src="images/environments/02.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/03.jpg" class="slide"></div>
+            	<div class="mySlides"><img src="images/environments/04.jpg" class="slide"></div>
+            	<div class="mySlides"><img src="images/environments/hei1.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/field.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/sunset.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/bridge.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/f1.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/f2.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/f3.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/f4.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/01drag.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/02drag.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/03drag.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/studies0.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/joyoflife1.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/joyoflife2.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/joyoflife3.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/joyoflife4.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/02_neighborhoodog.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/fight.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/0train0.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/0train1.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/0train2.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/kingdom1.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/kingdom2.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/kingdom3.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/kingdom4.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/environments/newfriend.jpg" class="slide" ></div>
+              <div class="mySlides"><img src="images/environments/room.jpg" class="slide" ></div>
+              <!-- <div class="mySlides"><img src="images/environments/chaoswiderf.jpg" class="slide" style="max-width:90vw; max-height:90vh; height:auto; width:auto;"></div> -->
+          </div>
+      </div>
+    </section>
+  </main>
+  <!-- // Footer & contact info -->
+      <div id="contact"></div>
+
+</body>
+</html>
