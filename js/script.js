@@ -25,9 +25,74 @@ $(document).ready(function() {
     });
 });
 
+// ---------------underline clicked nav item (NOT FOR GITHUB ONLY - SEE BELOW FOR GITHUB VERSION)--------------------------------
+// $(document).ready(function() {
+//
+//   var url = window.location.href;
+//   var path = window.location.pathname;
+//   var page = path.split("/").pop();
+//   var n = url.lastIndexOf('/');
+//   var result = url.substring(n + 1);
+//   if (result == "personal.html") {
+//     document.getElementById("personalwork").style.color = '#83c0ef' ;
+//   } else if (result == "spirituntamed.html") {
+//     document.getElementById("spirituntamed").style.color = '#83c0ef' ;
+//     document.getElementById("clientwork").style.color = '#83c0ef' ;
+//   } else if (result == "code.html") {
+//     document.getElementById("code").style.color = '#83c0ef' ;
+//   } else if (result == "music.html") {
+//     document.getElementById("music").style.color = '#83c0ef' ;
+//   } else if (result == "index.html#introduction") { //to upload to github, change to index#introduction
+//     document.getElementById("introductionabout").style.color = '#83c0ef' ;
+//   }
+//
+//     $(".nav").click(function (event) {
+//       var text = $(event.target).text();
+//       if (text == "About") {
+//           document.getElementById("introductionabout").style.color = '#83c0ef' ;
+//       }
+//     });
+//     $(".bounce").click(function (event) {
+//           document.getElementById("introductionabout").style.color = '#83c0ef' ;
+//     });
+// });
 
 
-//MODAL SCRIPTS
+//------------------------------------github version only----------------------------------------------
+$(document).ready(function() {
+
+  var url = window.location.href;
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  var n = url.lastIndexOf('/');
+  var result = url.substring(n + 1);
+  if (result == "personal") {
+    document.getElementById("personalwork").style.color = '#83c0ef' ;
+  } else if (result == "spirituntamed") {
+    document.getElementById("spirituntamed").style.color = '#83c0ef' ;
+    document.getElementById("clientwork").style.color = '#83c0ef' ;
+  } else if (result == "code") {
+    document.getElementById("code").style.color = '#83c0ef' ;
+  } else if (result == "music") {
+    document.getElementById("music").style.color = '#83c0ef' ;
+  } else if (result == "index#introduction") { //to upload to github, change to index#introduction
+    document.getElementById("introductionabout").style.color = '#83c0ef' ;
+  }
+
+    $(".nav").click(function (event) {
+      var text = $(event.target).text();
+      if (text == "About") {
+          document.getElementById("introductionabout").style.color = '#83c0ef' ;
+      }
+    });
+    $(".bounce").click(function (event) {
+          document.getElementById("introductionabout").style.color = '#83c0ef' ;
+    });
+});
+
+
+
+//------------------------------------MODAL SCRIPTS------------------------------------
 //detect click outside of modal; if so, close modal
 $(document).click(function(e){
     var clickElement = e.target;  // get the dom element clicked.
