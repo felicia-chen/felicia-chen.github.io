@@ -35,17 +35,34 @@
 <body class="animate-in">
     <header id="navigationplaceholder"></header>
     <main>
+      <!--_________________________________modal-________________________________-->
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="modal-content">
+             <div class="mySlides"><img src="images/spirituntamed/hellmountain1.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/hellmtn2.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/luckybedroom.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/02_bedroom.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/03_bedroomprops.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/04_props.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/05_milagrotrunk.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/014_rock.jpg" class="slide"></div>
+             <div class="mySlides"><img src="images/spirituntamed/04_colorkeys.jpg" class="slide"></div>
+         </div>
+     </div>
      <section id="portfolioThreeD" class="portfolioThreeD">
          <p><i> Visual Development for DreamWorks's Spirit Untamed</i></p>
-         <p><img src="images/spirituntamed/hellmountain1.jpg"></p>
-        <p><img src="images/spirituntamed/hellmtn2.jpg"></p>
-        <p><img src="images/spirituntamed/luckybedroom.jpg"></p>
-         <p><img src="images/spirituntamed/02_bedroom.jpg"></p>
-         <p><img src="images/spirituntamed/03_bedroomprops.jpg"></p>
-         <p><img src="images/spirituntamed/04_props.jpg"></p>
-         <p><img src="images/spirituntamed/05_milagrotrunk.jpg"></p>
-         <p><img src="images/spirituntamed/014_rock.jpg"></p>
-         <p><img src="images/spirituntamed/04_colorkeys.jpg"></p>
+         <div class ="item"><img src="images/spirituntamed/hellmountain1.jpg"onclick="onClick(this);currentSlide(1)"></div>
+         <div class ="item"><img src="images/spirituntamed/hellmtn2.jpg"onclick="onClick(this);currentSlide(2)"></div>
+        <div class ="item"><img src="images/spirituntamed/luckybedroom.jpg"onclick="onClick(this);currentSlide(3)"></div>
+         <div class ="item"><img src="images/spirituntamed/02_bedroom.jpg"onclick="onClick(this);currentSlide(4)"></div>
+         <div class ="item"><img src="images/spirituntamed/03_bedroomprops.jpg"onclick="onClick(this);currentSlide(5)"></div>
+         <div class ="item"><img src="images/spirituntamed/04_props.jpg"onclick="onClick(this);currentSlide(6)"></div>
+         <div class ="item"><img src="images/spirituntamed/05_milagrotrunk.jpg"onclick="onClick(this);currentSlide(7)"></div>
+         <div class ="item"><img src="images/spirituntamed/014_rock.jpg"onclick="onClick(this);currentSlide(8)"></div>
+         <div class ="item"><img src="images/spirituntamed/04_colorkeys.jpg"onclick="onClick(this);currentSlide(9)"></div>
      </section>
   </main>
 
