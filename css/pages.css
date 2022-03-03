@@ -227,8 +227,22 @@ display: block;
   overflow: auto;
   margin: auto;
   position: absolute;
-  padding-top: 9rem;
+  padding-top: 6rem;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*somehow client work pages have larger padding-top than personalwork, so fix personalwork */
+#personalworkmodal .mySlides img {
+  -webkit-transition: opacity 2000ms ease-in-out;
+-moz-transition: opacity 2000ms ease-in-out;
+  -o-transition: opacity 2000ms ease-in-out;
+     transition: opacity 2000ms ease-in-out;
+display: block;
+overflow: auto;
+margin: auto;
+position: absolute;
+padding-top: 10rem;
+top: 0; left: 0; bottom: 0; right: 0;
 }
 
 /* The Close Button */
