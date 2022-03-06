@@ -19,12 +19,12 @@
 //   var n = url.lastIndexOf('/');
 //   var result = url.substring(n + 1);
 //   var final = result.split('.')[0]; //cuts off the html part - IF GITHUB, SHOULD NOT USE THIS
-// 
+//
 //   if (result == "index.html#introduction") { // if clicked on about from outside index.html
 //     document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
-//   }
-//   else if (result == "spirituntamed.html") { //if clicked on page under clientwork
-//     document.getElementById("spirituntamed").style.color = '#83c0ef' ;
+//     //if clicked on page under clientwork
+//   } else if (result == "spirituntamed.html" || result == "pixiv.html") {
+//     document.getElementById(final).style.color = '#83c0ef' ;
 //     document.getElementById("clientwork").style.color = '#83c0ef' ;
 //   } else { //otherwise, take page name
 //     document.getElementById(final).style.color = '#83c0ef' ;
@@ -55,8 +55,9 @@ $(document).ready(function() {
   if (result == "index#introduction") { // if clicked on about from outside index.html
     document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
   }
-  else if (result == "spirituntamed") { //if clicked on page under clientwork
-    document.getElementById("spirituntamed").style.color = '#83c0ef' ;
+//if clicked on page under clientwork
+  else if (result == "spirituntamed" || result == "pixiv") {
+    document.getElementById(result).style.color = '#83c0ef' ;
     document.getElementById("clientwork").style.color = '#83c0ef' ;
   } else { //otherwise, take page name
     document.getElementById(result).style.color = '#83c0ef' ;
