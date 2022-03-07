@@ -97,8 +97,6 @@ ul, p {
     display: inline-block;
 }
 
-
-
 /*Header and Footer styles
 ______________________________________*/
 
@@ -214,17 +212,6 @@ header {
     100%     {bottom:30;}
   }
 
-
-
-
-
-
-
-
-
-
-
-
 /*main height*/
 .main {
     height: 100vh;
@@ -235,16 +222,13 @@ ______________________________________*/
 .introduction {
 
     display: block;
-    padding-top:7rem;  /*account for navigation */
+    padding-top: 15rem;  /*account for navigation */
 }
 
 @media only screen and (max-width: 700px) {
         .introduction {
           text-align: center;
         }}
-
-
-
 
 /* Work Section
 ______________________________________*/
@@ -326,6 +310,4 @@ ______________________________________*/
     background-size: cover;
     background-position: center;
         }
-
-
 }
