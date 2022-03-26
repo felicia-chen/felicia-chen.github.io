@@ -217,8 +217,8 @@ ________________________________________________________________________________
 }
 
 #clientworkmodal .slide { /*without specifying, height is too tall*/
-  max-width:85vw;
-  max-height:85vh;
+  max-width:83vw;
+  max-height:83vh;
   height:auto;
   width:auto;
 }
@@ -231,7 +231,7 @@ display: block;
   overflow: auto;
   margin: auto;
   position: absolute;
-  padding-top: 5rem;
+  padding-top: 4.4rem;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
