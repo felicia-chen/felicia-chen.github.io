@@ -125,16 +125,13 @@ header {
 __________________________________________________________________________________________________________________*/
 
 #gallery {
-  padding-top:7rem;
-  margin-top: 7rem;
+  padding-top:6rem;
+  margin-top: 6rem;
   text-align: center;
 }
 
-
 /*illustration masonry*/
-
 .masonry {
-
   margin: 0 auto;
   margin-top: 2em;
   margin-left:12rem;
@@ -142,7 +139,6 @@ ________________________________________________________________________________
   column-count: 4;
   column-gap: 1em;
   float: left;
-
 }
 
 .item {
@@ -219,6 +215,13 @@ ________________________________________________________________________________
   height:auto;
   width:auto;
 }
+
+#clientworkmodal .slide { /*without specifying, height is too tall*/
+  max-width:85vw;
+  max-height:85vh;
+  height:auto;
+  width:auto;
+}
 .mySlides img {
         -webkit-transition: opacity 2000ms ease-in-out;
       -moz-transition: opacity 2000ms ease-in-out;
@@ -228,22 +231,13 @@ display: block;
   overflow: auto;
   margin: auto;
   position: absolute;
-  padding-top: 6rem;
+  padding-top: 5rem;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
 /*somehow client work pages have larger padding-top than personalwork, so fix personalwork */
 #personalworkmodal .mySlides img {
-  -webkit-transition: opacity 2000ms ease-in-out;
--moz-transition: opacity 2000ms ease-in-out;
-  -o-transition: opacity 2000ms ease-in-out;
-     transition: opacity 2000ms ease-in-out;
-display: block;
-overflow: auto;
-margin: auto;
-position: absolute;
-padding-top: 10rem;
-top: 0; left: 0; bottom: 0; right: 0;
+padding-top: 9.5rem;
 }
 
 /* The Close Button */
@@ -307,9 +301,7 @@ z-index:200;
 
 /* Music Styles
 ________________________________________________________________________________________________________________*/
-
 .music {
-
     padding-top: 7rem;  /*account for navigation */
 }
 
@@ -348,9 +340,6 @@ ________________________________________________________________________________
 
 /*Code Portfolio Styles
 ________________________________________________________________________________________________________________*/
-.animportfolio {
-    height: 70rem;
-}
 .codeportfolio {
     margin-top: 7rem;  /*account for navigation */
     padding-top: 7rem;  /*account for navigation */
@@ -429,14 +418,12 @@ hr {
     text-align: center;
 }
 
-
 #portfolioThreeD, h3 {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 20px;
     font-weight: 100;
 }
-
 
 #portfolioThreeD h4 {
     font-size: 17px;

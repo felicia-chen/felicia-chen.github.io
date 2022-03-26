@@ -222,7 +222,7 @@ ______________________________________*/
 .introduction {
 
     display: block;
-    padding-top: 18rem;  /*account for navigation */
+    padding-top: 10rem;  /*account for navigation */
 }
 
 @media only screen and (max-width: 700px) {
