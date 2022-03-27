@@ -134,8 +134,8 @@ ________________________________________________________________________________
 .masonry {
   margin: 0 auto;
   margin-top: 2em;
-  margin-left:12rem;
-  margin-right:12rem;
+  margin-left:10rem;
+  margin-right:10rem;
   column-count: 4;
   column-gap: 1em;
   float: left;
