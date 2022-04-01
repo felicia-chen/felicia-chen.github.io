@@ -89,8 +89,8 @@ ______________________________________*/
     position: absolute;
     display: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    -webkit-animation: fadeIn 0.5s;
-  animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
 }
 
 .dropdown-content a {
@@ -100,8 +100,8 @@ ______________________________________*/
     display: block;
     text-align:left;
     font-size: 1.2rem;
-    -webkit-animation: fadeIn 0.5s;
-  animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -180,8 +180,8 @@ ______________________________________*/
     margin-top: 6.9rem;
     padding-bottom: 2rem;
 
-    -webkit-animation: fadeIn 0.5s;
-  animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
 }
 .mobile-nav  ul {
     margin-top:7rem; /*account for navigation */
