@@ -23,7 +23,7 @@
 //   if (result == "index.html#introduction") { // if clicked on about from outside index.html
 //     document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
 //     //if clicked on page under clientwork
-//   } else if (result == "spirituntamed.html" || result == "pixiv.html") {
+//   } else if (result == "spirituntamed.html" || result == "illustration.html") {
 //     document.getElementById(final).style.color = '#83c0ef' ;
 //     document.getElementById("clientwork").style.color = '#83c0ef' ;
 //   } else { //otherwise, take page name
@@ -56,7 +56,7 @@ $(document).ready(function() {
     document.getElementById("introductionabout").style.color = '#83c0ef' ;//to upload to github, change to index#introduction
   }
 //if clicked on page under clientwork
-  else if (result == "spirituntamed" || result == "pixiv") {
+  else if (result == "spirituntamed" || result == "illustration") {
     document.getElementById(result).style.color = '#83c0ef' ;
     document.getElementById("clientwork").style.color = '#83c0ef' ;
   } else { //otherwise, take page name
