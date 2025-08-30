@@ -119,79 +119,58 @@ header {
     font-size: 0.7em;
 }
 
+/*POKEMON STYLES 2____________________________________________________________________________________________________________*/
 
-
-/*Personal Work styles
-__________________________________________________________________________________________________________________*/
-
-#gallery {
-  padding-top:6rem;
+#pokemongallery {
+  padding-top:4rem;
   margin-top: 6rem;
+    padding-left:6rem;
+    padding-right: 6rem;
   text-align: center;
 }
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
-/*illustration masonry*/
-.masonry {
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-left:10rem;
-  margin-right:10rem;
-  column-count: 4;
-  column-gap: 1em;
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
   float: left;
+  width: 19.999999%;
 }
 
-.item {
-    /* background-color: #eee; */
-    display: flex;
-    margin: 0 0 1em;
-    padding: 0;
+@media only screen and (max-width:1400px) and (min-width:900px)  {
+  .responsive {
+    width: 33.1%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width:900px) and (min-width:700px)  {
+  .responsive {
+    width: 49.9999%;
+    margin: 6px 0;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
     width: 100%;
-    cursor:pointer;
+  }
 }
 
-.galleryill img {
-    width: 100%;
-    display: inline-block;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@media only screen and (max-width: 600px) {
-    .masonry {
-      margin-left:1rem;
-      margin-right:1rem;
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-
-@media only screen and (max-width:800px) and (min-width:600px)  {
-    .masonry {
-      margin-left:1rem;
-      margin-right:1rem;
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media only screen and (max-width:1000px) and (min-width:800px)  {
-    .masonry {
-      margin-left:2rem;
-      margin-right:2rem;
-        -moz-column-count: 2;
-        -webkit-column-count:2;
-        column-count: 2;
-    }
-}
-
-@media only screen and (max-width:1300px) and (min-width:1000px)  {
-    .masonry {
-      margin-left:3rem;
-      margin-right:3rem;
-
-    }
-}
 
 /*lightbox*/
 /* The Modal (background) */
@@ -201,6 +180,7 @@ ________________________________________________________________________________
     display: none;
     text-align: center;
     margin:auto;
+    margin-top: -10rem;
     position: fixed;
     width:100%;
     height:100vh;
@@ -231,13 +211,12 @@ display: block;
   overflow: auto;
   margin: auto;
   position: absolute;
-  padding-top: 4.4rem;
+  max-height:80%;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
 /*somehow client work pages have larger padding-top than personalwork, so fix personalwork */
 #personalworkmodal .mySlides img {
-padding-top: 9.5rem;
 }
 
 /* The Close Button */
