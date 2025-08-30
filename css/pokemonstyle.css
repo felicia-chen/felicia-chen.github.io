@@ -1,0 +1,318 @@
+/*Color Palette
+_____________________
+#0C1821 - dark blueu black
+#1B2A41 - dark blue
+#324A5F - lighter blue green
+#CCC9DC - lavendar
+
+*/
+
+/*Global styles
+___________________________________________________________________________*/
+
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-size: 62.5%
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Mukta', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+h1, h2 {
+    font-family: 'Mukta', sans-serif;
+}
+h1 {
+    font-size: 4rem;
+    font-weight:100;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.35em;
+    padding: 0 4rem 0;
+
+}
+h2 {
+    font-size: 3rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight:100;
+    letter-spacing: 0.1rem;
+}
+h3 {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #324A5F;
+}
+h4 {
+    font-size: 1.3rem;
+    letter-spacing: 0.8rem;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    margin-bottom: -10px;
+}
+
+a {
+    color: #324A5F;
+    font-weight: 100;
+
+}
+
+.content-wrap {
+    max-width: 200rem;
+    margin: 0 auto;
+    padding: 6rem 5rem;
+    overflow: auto;
+}
+ul, p {
+    margin: 0;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    font-weight:100;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.backtotop {
+    text-align: left;
+    color: black;
+}
+
+
+
+
+/*Header and Footer styles
+________________________________________________________________________________________________________________*/
+
+#contact {
+    background: none; /*#0C1821;*/
+    color: #324A5F;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+
+header {
+    position: relative;
+}
+
+
+.footer {
+    text-align: center;
+}
+.contact-info a {
+    margin: 1rem;
+    text-decoration: none;
+}
+.gmail {
+    font-size: 0.7em;
+}
+
+
+
+/*Personal Work styles
+__________________________________________________________________________________________________________________*/
+
+#gallery {
+  padding-top:6rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+/*illustration masonry*/
+.masonry {
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-left:10rem;
+  margin-right:10rem;
+  column-count: 4;
+  column-gap: 1em;
+  float: left;
+}
+
+.item {
+    /* background-color: #eee; */
+    display: flex;
+    margin: 0 0 1em;
+    padding: 0;
+    width: 100%;
+    cursor:pointer;
+}
+
+.galleryill img {
+    width: 100%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    .masonry {
+      margin-left:1rem;
+      margin-right:1rem;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width:800px) and (min-width:600px)  {
+    .masonry {
+      margin-left:1rem;
+      margin-right:1rem;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:800px)  {
+    .masonry {
+      margin-left:2rem;
+      margin-right:2rem;
+        -moz-column-count: 2;
+        -webkit-column-count:2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width:1300px) and (min-width:1000px)  {
+    .masonry {
+      margin-left:3rem;
+      margin-right:3rem;
+
+    }
+}
+
+/*lightbox*/
+/* The Modal (background) */
+.modal {
+    z-index: 100;
+    float: left;
+    display: none;
+    text-align: center;
+    margin:auto;
+    position: fixed;
+    width:100%;
+    height:100vh;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.9);
+}
+
+.slide {
+  max-width:90vw;
+  max-height:90vh;
+  height:auto;
+  width:auto;
+}
+
+#clientworkmodal .slide { /*without specifying, height is too tall*/
+  max-width:83vw;
+  max-height:83vh;
+  height:auto;
+  width:auto;
+}
+.mySlides img {
+        -webkit-transition: opacity 2000ms ease-in-out;
+      -moz-transition: opacity 2000ms ease-in-out;
+        -o-transition: opacity 2000ms ease-in-out;
+           transition: opacity 2000ms ease-in-out;
+display: block;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  padding-top: 4.4rem;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*somehow client work pages have larger padding-top than personalwork, so fix personalwork */
+#personalworkmodal .mySlides img {
+padding-top: 9.5rem;
+}
+
+/* The Close Button */
+.close {
+  margin-top:9rem;
+  z-index: 150;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 4rem;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#clientworkmodal .close {
+  margin-top:6.3rem;
+  right: 4rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+z-index:200;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 0.5rem 1rem;
+  padding-top: 8rem; /*push arrow down in position so more centered */
+  margin: 1rem;
+  margin-top: -50px;
+  color: white;
+  font-weight: lighter;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#clientworkmodal .prev, #clientworkmodal .next {
+  padding-top: 5rem; /*push arrow down in position so more centered */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 50%;
+}
+.prev {
+  left: 0;
+  border-radius: 50%; /*3px 0 0 3px*/
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+@media only screen and (max-width: 700px) {
+    .prev {
+    margin-left: -1rem;
+  }
+  .next {
+  margin-right: -1rem;
+}
+
+}
