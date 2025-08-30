@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="icon"
+          type="image/png"
+          href="https://felicia-chen.com/images/favicon.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149846169-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-149846169-1');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felicia Chen | Pokemon TCG Illustrations</title>
+  <script src="https://kit.fontawesome.com/f2e92220ae.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/globalnavstyles.css">
+  <link rel="stylesheet" href="css/pokemonstyle.css">
+</head>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(function(){
+     $("#navigationplaceholder").load("html/nav.html");
+      $("#contact").load("html/footer.html");
+    });
+  </script>
+
+
+<body class="animate-in">
+  <header id="navigationplaceholder"></header>
+  <main>
+
+    <section id = pokemongallery>
+    <p><i> Illustrations for <a href = "https://www.pokemon.com/us/pokemon-tcg/pokemon-cards?particularArtist=Felicia%20Chen"> Pokemon TCG</a> </i></p>
+      <div class="responsive">
+      <div class="gallery">
+          <img src="images/pokemon/salandit.jpg" onclick="onClick(this);currentSlide(1)">
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+            <div class = "item"><img src="images/pokemon/primeape.jpg"onclick="onClick(this);currentSlide(2)"></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+            <div class = "item"><img src="images/pokemon/floragato.jpg"onclick="onClick(this);currentSlide(3)"></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+          <div class = "item"> <img src="images/pokemon/dolliv.jpg"onclick="onClick(this);currentSlide(4)"></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+            <div class = "item"><img src="images/pokemon/virizion.jpg"onclick="onClick(this);currentSlide(5)"></div>
+      </div>
+    </div>
+</section>
+<section id = personalworkmodal>
+      <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="modal-content">
+            	<div class="mySlides"><img src="images/pokemon/salandit.jpg" class="slide"></div>
+            	<div class="mySlides"><img src="images/pokemon/primeape.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/pokemon/floragato.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/pokemon/dolliv.jpg" class="slide"></div>
+              <div class="mySlides"><img src="images/pokemon/virizion.jpg" class="slide"></div>
+
+              <!-- <div class="mySlides"><img src="images/environments/chaoswiderf.jpg" class="slide" style="max-width:90vw; max-height:90vh; height:auto; width:auto;"></div> -->
+          </div>
+      </div>
+    </section>
+    <div class="clearfix"></div>
+  </main>
+  <!-- // Footer & contact info -->
+      <div id="contact"></div>
+
+</body>
+</html>
