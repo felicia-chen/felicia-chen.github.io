@@ -130,6 +130,8 @@ header {
 }
 div.gallery img {
   width: 100%;
+  padding: 1rem;
+  padding-bottom: 2rem;
   height: auto;
   cursor: pointer;
 }
@@ -142,7 +144,7 @@ div.gallery img {
 .responsive {
   padding: 0 6px;
   float: left;
-  width: 19.999999%;
+  width: 24.999%; /*19.999% = 5 across; 33.222% = 3 across */
 }
 
 @media only screen and (max-width:1400px) and (min-width:900px)  {
@@ -171,6 +173,7 @@ div.gallery img {
   display: table;
   clear: both;
 }
+
 
 
 /*lightbox*/
@@ -296,3 +299,4 @@ z-index:200;
 }
 
 }
+
